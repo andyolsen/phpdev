@@ -14,16 +14,17 @@ try
 
 	$stmt = $conn->query('SELECT EmployeeID, Name, Salary, Region FROM Employees');
 
-/*	while ($row = $stmt->fetch())
+	while ($row = $stmt->fetch())
 	{
-		$emp = new Employee;
+/*		$emp = new Employee;
 		$emp->employeeID = $row['EmployeeID'];
 		$emp->name = $row['Name'];
 		$emp->salary = $row['Salary'];
 		$emp->region = $row['Region'];
 		$employees->array_push($emp);
+*/
 	}
-*/}
+}
 catch(PDOException $ex)
 {
     echo "Connection failed: " . $ex->getMessage();
