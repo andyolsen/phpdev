@@ -13,7 +13,7 @@ try
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	// Simple hard-coded delete.
-	$stmt = $conn->prepare('DELETE Employees WHERE Salary < 5000');
+	$stmt = $conn->prepare('DELETE FROM Employees WHERE Salary < 5000');
 	$stmt->execute(); 
 
     $msg = "Deleted employees who earn less than £5K. It's a dog-eat-dog world.";
