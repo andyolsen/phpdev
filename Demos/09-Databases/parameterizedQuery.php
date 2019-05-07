@@ -42,7 +42,7 @@ catch(PDOException $ex)
 
 <html>
 <body>
-	<h4><?php echo count($employees) . "employee(s) earn at least " . $minSal</h4>
+	<h4><?php echo count($employees) . " employee(s) earn at least " . $minSal; ?> </h4>
 	<ul>
 		<?php foreach ($employees as $e) { ?>
 			<li> <?php echo $e ?> </li>
