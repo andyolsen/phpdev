@@ -17,12 +17,11 @@ try
 	while ($row = $stmt->fetch())
 	{
 		$emp = new Employee;
-/*		$emp->employeeID = $row['EmployeeID'];
+		$emp->employeeID = $row['EmployeeID'];
 		$emp->name = $row['Name'];
 		$emp->salary = $row['Salary'];
 		$emp->region = $row['Region'];
-		$employees->array_push($emp);
-*/
+		array_push($employees, $emp);
 	}
 }
 catch(PDOException $ex)
