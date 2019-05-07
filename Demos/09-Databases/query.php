@@ -6,7 +6,7 @@ $servername = "localhost";
 $username = "root";
 $password = "SHX5RwamWFz7pB";
 $employees = [];
-
+/*
 try 
 {
     $conn = new PDO("mysql:host=$servername;dbname=MyDatabase", $username, $password);
@@ -28,7 +28,7 @@ catch(PDOException $ex)
 {
     echo "Connection failed: " . $ex->getMessage();
 }
-?>
+*/?>
 
 <html>
 <body>
