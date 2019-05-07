@@ -19,29 +19,16 @@ try
 		'salary' => 1234,
 		'region' => 'Norway']); 
 
-	while ($row = $stmt->fetch())
-	{
-		$emp = new Employee;
-		$emp->employeeID = $row['EmployeeID'];
-		$emp->name = $row['Name'];
-		$emp->salary = $row['Salary'];
-		$emp->region = $row['Region'];
-		array_push($employees, $emp);
-	}
+    $msg = "Employee inserted successfully";
 }
 catch(PDOException $ex)
 {
-    echo "Connection failed: " . $ex->getMessage();
+    $msg = "Connection failed: " . $ex->getMessage();
 }
 ?>
 
 <html>
 <body>
-	<h4><?php echo "After insert, there are " . count($employees) . " employee(s)" ?> </h4>
-	<ul>
-		<?php foreach ($employees as $e) { ?>
-			<li> <?php echo $e ?> </li>
-		<?php } ?>
-	</ul>
+	<h4><?php echo $msg ?> </h4>
 </body>
 </html>
