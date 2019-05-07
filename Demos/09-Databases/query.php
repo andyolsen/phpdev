@@ -15,11 +15,11 @@ try
 	while ($row = $stmt->fetch())
 	{
 		$emp = new Employee;
-		emp.employeeID = $row['EmployeeID'];
-		emp.name = $row['Name'];
-		emp.salary = $row['Salary'];
-		emp.region = $row['Region'];
-		$employees.push($emp);
+		$emp->employeeID = $row['EmployeeID'];
+		$emp->name = $row['Name'];
+		$emp->salary = $row['Salary'];
+		$emp->region = $row['Region'];
+		$employees->push($emp);
 	}
 }
 catch(PDOException $ex)
