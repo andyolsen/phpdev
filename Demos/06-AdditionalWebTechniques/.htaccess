@@ -1,0 +1,9 @@
+# Set the default "index file" in the current directory.
+DirectoryIndex hei.html
+
+# Set default "error documents" for specific HTTP errors. You can specify an "error document" in 3 ways:
+#  - Local URL, starting with / (this is relative to the Apache root www publishing directory).
+#  - Absolute URL, e.g. http://mydomain.com/errorPages/404.html.
+#  - Anything else, e.g. OH DEAR OH DEAR OH DEAR (treated as literal error message to display).
+ErrorDocument 404 /errorPages/404.html
+ErrorDocument 500 /errorPages/500.html

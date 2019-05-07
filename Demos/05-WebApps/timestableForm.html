@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Times table form</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 10em;
+        }
+		.formrow {
+		    margin-bottom: 1em;
+		}
+    </style>
+</head>
+<body>
+    <h1>Times table form</h1>
+    
+    <form action="timestableFormProcessing.php" method="post">
+
+        <div class="formrow">
+            <label>Minimum value:</label>
+            <input type="text" name="min">
+        </div>
+      
+        <div class="formrow">
+            <label>Maximum value:</label>
+            <input type="text" name="max">
+        </div>      
+      
+        <div class="formrow">   
+            <input type="submit" text="Submit">
+        </div>
+	  
+    </form>
+    
+</body>
+</html>
