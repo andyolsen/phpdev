@@ -16,8 +16,8 @@ try
 
 	while ($row = $stmt->fetch())
 	{
-/*		$emp = new Employee;
-		$emp->employeeID = $row['EmployeeID'];
+		$emp = new Employee;
+/*		$emp->employeeID = $row['EmployeeID'];
 		$emp->name = $row['Name'];
 		$emp->salary = $row['Salary'];
 		$emp->region = $row['Region'];
