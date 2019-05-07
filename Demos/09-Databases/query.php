@@ -1,4 +1,6 @@
-<?php require 'employee.php'
+<?php 
+
+require 'employee.php';
 
 $servername = "localhost";
 $username = "root";
