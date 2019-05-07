@@ -21,7 +21,7 @@ try
 		$emp->name = $row['Name'];
 		$emp->salary = $row['Salary'];
 		$emp->region = $row['Region'];
-		$employees->push($emp);
+		$employees->array_push($emp);
 	}
 }
 catch(PDOException $ex)
