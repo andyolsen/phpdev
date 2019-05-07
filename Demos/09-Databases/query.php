@@ -32,6 +32,11 @@ catch(PDOException $ex)
 
 <html>
 <body>
-	There are <?php echo count($employees) ?> employees.
+	<h4>There are <?php echo count($employees) ?> employee(s)</h4>
+	<ul>
+		<?php foreach ($employees as $e) { ?>
+			<li> <?php echo $e ?> </li>
+		<?php } ?>
+	</ul>
 </body>
 </html>
